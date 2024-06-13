@@ -1,4 +1,4 @@
-package net.pranav.myod;
+package net.pranav.stonecraft;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -18,7 +18,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.pranav.myod.item.Moditems;
+import net.pranav.stonecraft.item.ModCreativeModeTabs;
+import net.pranav.stonecraft.item.Moditems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -26,12 +27,14 @@ import org.slf4j.Logger;
 public class MyMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "mymod";
+    public static final String MOD_ID = "stonecraft";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     public MyMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         Moditems.register(modEventBus);
 
@@ -67,6 +70,7 @@ public class MyMod
         {
             if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
                 event.accept(Moditems.PLATINUM_INGOT);
+                event.accept(Moditems.RAW_PLATINUM);
             }
     }
 

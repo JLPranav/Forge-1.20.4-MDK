@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures":{
-    "layer0": "mymod:item/platinum ingot"
+    "layer0": "stonecraft:item/raw_platinum"
   }
 }
