@@ -1,5 +1,13 @@
 {
   "item.stonecraft.platinum_ingot": "Platinum Ingot",
   "item.stonecraft.raw_platinum": "Raw Platinum Ore",
-  "creative_tab.my_mod_tab": "StoneCraft"
+  "item.stonecraft.rock": "Rock",
+  "item.stonecraft.plant_fibre": "Plant Fibre",
+  "item.stonecraft.rope": "Rope",
+  "item.stonecraft.sharp_rock": "Sharp Rock",
+  "item.stonecraft.spear_head": "Spear Head",
+  "item.stonecraft.handle": "Handle",
+  "item.stonecraft.spear": "Spear",
+
+  "creative_tab.stonecraft_tab": "Stonecraft"
 }

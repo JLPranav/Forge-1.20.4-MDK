@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sticks",
+  "pattern": [
+    "  #",
+    " S",
+    "G"
+  ],
+  "key": {
+    "#": {
+      "item": "stonecraft:spear_head"
+    },
+    "S": {
+      "item": "stonecraft:handle"
+    },
+    "G": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "stonecraft:spear",
+    "count": 1
+  }
+}
