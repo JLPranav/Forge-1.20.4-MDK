@@ -4,8 +4,8 @@
   "group": "sticks",
   "pattern": [
     "  #",
-    " S",
-    "G"
+    " S ",
+    "G  "
   ],
   "key": {
     "#": {

@@ -2,7 +2,6 @@ package net.darkmass.stonecraft;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -20,6 +19,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.darkmass.stonecraft.item.StonecraftCreativeTabs;
 import net.darkmass.stonecraft.item.StonecraftItems;
+import net.darkmass.stonecraft.block.StonecraftBlocks;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -37,6 +37,8 @@ public class Stonecraft
         StonecraftCreativeTabs.register(modEventBus);
 
         StonecraftItems.register(modEventBus);
+
+        StonecraftBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

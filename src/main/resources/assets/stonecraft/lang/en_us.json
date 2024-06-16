@@ -9,5 +9,8 @@
   "item.stonecraft.handle": "Handle",
   "item.stonecraft.spear": "Spear",
 
+  "block.stonecraft.platinum_block": "Platinum Block",
+  "block.stonecraft.raw_platinum_block": "Raw Platinum Block",
+
   "creative_tab.stonecraft_tab": "Stonecraft"
 }
